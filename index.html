@@ -1,1 +1,173 @@
-initial commit
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelvyn Virginio — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <button id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#sobre">~/sobre</a>
+      <a href="#formacao">~/formação</a>
+      <a href="#portfolio">~/portfolio</a>
+      <a href="#contato">~/contato</a>
+    </div>
+    <button id="theme-toggle" aria-label="Alternar tema">
+      <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <span id="theme-label">light</span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- Sobre mim -->
+    <section id="sobre">
+      <div class="secao-header">
+        <span class="destaque">~/sobre</span>
+      </div>
+      <div class="sobre-content">
+        <div class="sobre-texto">
+          <h1>Kelvyn da Silva Virginio</h1>
+          <h2>Desenvolvedor Sênior .NET &amp; Vue</h2>
+          <p>
+            Desenvolvedor com <strong>8 anos de experiência</strong> em engenharia de software, com atuação em todas as etapas do ciclo de desenvolvimento — desde a concepção de arquiteturas e escrita de código até infraestrutura de deployment, observabilidade, implantação, treinamento e suporte de sistemas.
+          </p>
+          <p>
+            Experiência sólida em aplicações <strong>Desktop</strong>, <strong>Web</strong>, integrações com plataformas de terceiros, além de criação e manutenção de pipelines <strong>CI/CD</strong> e infraestrutura com observabilidade para deployment de aplicações <strong>SaaS</strong>.
+          </p>
+          <div class="tags">
+            <span>Vue.js</span>
+            <span>.NET</span>
+            <span>C#</span>
+            <span>PostgreSQL</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao">
+      <div class="secao-header">
+        <span class="destaque">~/formação</span>
+      </div>
+      <div class="cards-grade">
+
+        <div class="card">
+          <div class="card-badge">AWS</div>
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p>Certificação oficial da Amazon Web Services que valida conhecimentos fundamentais sobre a nuvem AWS, incluindo serviços principais, segurança, arquitetura, preços e suporte.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Udemy</div>
+          <h3>Monitoramento com OpenTelemetry &amp; Grafana</h3>
+          <p>Curso focado em observabilidade de aplicações modernas, abordando coleta de métricas, rastreamento distribuído e visualização de dados com OpenTelemetry e Grafana.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Alura</div>
+          <h3>Administração com PostgreSQL</h3>
+          <p>Formação completa em administração de banco de dados PostgreSQL, cobrindo modelagem, otimização de queries, backup, replicação e gerenciamento de instâncias.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Alura</div>
+          <h3>Formação .NET</h3>
+          <p>Trilha de aprendizado abrangente no ecossistema .NET, com foco em C#, ASP.NET Core, Entity Framework, APIs RESTful e boas práticas de desenvolvimento backend.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Uninter / Em curso</div>
+          <h3>Ciências da Computação</h3>
+          <p>Graduação em andamento com base sólida em algoritmos, estruturas de dados, sistemas operacionais, redes de computadores e fundamentos matemáticos da computação.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+      <div class="secao-header">
+        <span class="destaque">~/portfolio</span>
+      </div>
+      <div class="cards-grade">
+
+        <div class="card">
+          <div class="card-badge">.NET / WPF</div>
+          <h3>Optcare</h3>
+          <p>Aplicação desktop desenvolvida em .NET WPF voltada para o registro de consultas e exames oftalmológicos. Utilizada em óticas e consultórios oftalmológicos para gestão clínica eficiente.</p>
+          <a class="btn" href="https://github.com/KelvynSV/Optcare" target="_blank" rel="noopener">[ ver projeto ]</a>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">.NET / WPF</div>
+          <h3>Manga To Kindle</h3>
+          <p>Ferramenta que realiza download de histórias em quadrinhos disponíveis na Web, converte para o formato ePub e envia automaticamente para um e-mail Kindle, facilitando o consumo de mangás diretamente no dispositivo.</p>
+          <a class="btn" href="https://github.com/KelvynSV/manga-to-kindle" target="_blank" rel="noopener">[ ver projeto ]</a>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">.NET / Library</div>
+          <h3>Dynamic Query Framework</h3>
+          <p>Biblioteca .NET que permite realizar pesquisas dinâmicas em aplicações Web utilizando entidades do Entity Framework. Inspirada na linguagem de consulta JQL do Jira, oferece uma API expressiva para filtros complexos.</p>
+          <a class="btn" href="https://github.com/KelvynSV/dynamic-query-framework" target="_blank" rel="noopener">[ ver projeto ]</a>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Vue / Nuxt</div>
+          <h3>Nuxtmon</h3>
+          <p>Aplicação Pokédex desenvolvida em Vue com Nuxt para aprendizado inicial do framework. Consome a PokéAPI para listar e exibir detalhes dos Pokémon com uma interface limpa e responsiva.</p>
+          <a class="btn" href="https://github.com/KelvynSV/Nuxtmon" target="_blank" rel="noopener">[ ver projeto ]</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="secao-header">
+        <span class="destaque">~/contato</span>
+      </div>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">// nome</label>
+          <input type="text" id="name" placeholder="Seu nome completo" autocomplete="name" />
+          <span class="campo-error" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">// e-mail</label>
+          <input type="email" id="email" placeholder="usuario@dominio.com" autocomplete="email" />
+          <span class="campo-error" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">// mensagem</label>
+          <textarea id="message" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+          <span class="campo-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn enviar-btn">[ enviar mensagem ]</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <p id="modal-msg"></p>
+      <button id="modal-close" class="btn">[ fechar ]</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
